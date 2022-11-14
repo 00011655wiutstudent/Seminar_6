@@ -5,8 +5,6 @@ def test_is_valid(test):
         print("True")
     else:
         print("False")
-
-
 test_is_valid('fdj')
 # Task 5
 def find(word, letter, index):
@@ -16,6 +14,17 @@ def find(word, letter, index):
         index = index + 1
     return -1
 
-
 print(find("computer", "u", 5))
 
+# Homewrok 1
+def is_the_same(message1, message2):
+    if isinstance(message1, str) and isinstance(message2, str):
+        if message1.lower() == message2.lower():
+            print("True")
+        else:
+            print("False")
+    else:
+        print("Please enter strings")
+
+
+is_the_same("mad", "Ma")
