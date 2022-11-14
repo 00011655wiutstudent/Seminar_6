@@ -1,5 +1,4 @@
 # Task 4
-
 def test_is_valid(test):
     if isinstance(test, int) and test in range(1, 4):
         print("True")
@@ -28,3 +27,18 @@ def is_the_same(message1, message2):
 
 
 is_the_same("mad", "Ma")
+
+inv_name = "Invalid argument. Name must be string (len >= 2)."
+inv_surname = "Invalid argument. Surname must be string (len >= 2)."
+def format_name(name, surname):
+    if isinstance(name, str) and len(name) >= 2:
+        if isinstance(surname, str) and len(surname) >= 2:
+            print(name[0].upper() +". " + surname + " (" + name + ")")
+        else:
+            print(inv_surname)
+    else:
+        print(inv_name)
+
+
+print(format_name("Wallace", "Corbo Ugulino"))
+
